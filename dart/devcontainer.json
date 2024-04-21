@@ -13,7 +13,8 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"dart-code.dart-code"
+				"dart-code.dart-code",
+				"Dart-Code.flutter"
 			]
 		}
 	}
