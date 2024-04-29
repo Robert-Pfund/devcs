@@ -1,0 +1,41 @@
+
+{
+	"name": "Dart",
+	//Nor use a Dockerfile or Docker Compose file.
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"dart-code.dart-code",
+				"Dart-Code.flutter",
+				"ms-azuretools.vscode-docker"
+			],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash (2)",
+                "terminal.integrated.profiles.linux": { "bash": { "path": "/bin/bash" } }
+            }
+		}
+	},
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/bash-command":1
+	},
+
+	// "forwardPorts": [],
+
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:/root/flutter/bin/"
+	},
+
+	"postCreateCommand": "flutter doctor"
+
+	// "customizations": {},
+	// "remoteUser": "root"
+}
