@@ -1,8 +1,7 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/rust
+
 {
 	"name": "Dart",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	//Nor use a Dockerfile or Docker Compose file.
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -13,7 +12,8 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"dart-code.dart-code"
+				"dart-code.dart-code",
+				"Dart-Code.flutter"
 			]
 		}
 	}
