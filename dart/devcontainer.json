@@ -1,7 +1,6 @@
 
 {
 	"name": "Dart",
-	//Nor use a Dockerfile or Docker Compose file.
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
