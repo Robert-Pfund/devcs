@@ -1,3 +1,3 @@
 FROM dart:3.3.1-sdk
 
-RUN echo "starting again again again again"
+RUN echo "starting as always"
