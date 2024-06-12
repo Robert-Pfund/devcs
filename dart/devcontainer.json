@@ -1,7 +1,6 @@
 
 {
 	"name": "Dart",
-	//Nor use a Dockerfile or Docker Compose file.
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -16,13 +15,13 @@
 				"Dart-Code.flutter"
 			]
 		}
-	}
+	},
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "rustc --version",
